@@ -1,6 +1,7 @@
 <?php
 
-    class class1{
+/*
+     class class1{
         function fun1(){
             echo "This is OOP First Function";
         }
@@ -14,5 +15,26 @@
 
     $obj = new class1();
     $obj -> fun1();
+    
+*/
+
+
+
+
+class class2{
+    public $x = 100;
+    function fun4(){
+        echo $this -> x;
+    }
+}
+
+$obj = new class2();
+$obj -> fun4();
+
+
+
+
+
+
 
 ?>
