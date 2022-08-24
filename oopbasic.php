@@ -1,18 +1,15 @@
 <?php
 
-class class1{
-    function fun1(){
-        echo 10;
+    class class1{
+        function fun1(){
+            echo "This is OOP First Function";
+        }
+        function fun2(){
+            echo "This is OOP Second Function";
+        }
     }
 
-    function fun2(){
-        echo 20;
-    }
-}
-
-
-$obj = new class1();
-$obj ->fun1();
-
+    $obj = new class1();
+    $obj -> fun1();
 
 ?>
