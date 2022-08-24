@@ -7,6 +7,9 @@
         function fun2(){
             echo "This is OOP Second Function";
         }
+        function fun3(){
+            echo "This is OOP Third Function";
+        }
     }
 
     $obj = new class1();
