@@ -80,7 +80,7 @@ $obj -> fun6();
 
 */
 
-
+/*
 
 class class5{
 
@@ -98,6 +98,55 @@ class class5{
 }
 
 $obj = new class5();
+
+$obj -> fun7();
+
+
+*/
+
+
+/*
+
+class class5{
+
+    function __construct($y){
+         $this->x = $y;
+    }
+
+    function fun7(){
+        echo $this->x ."<br>";
+    }
+
+    function __destruct(){
+        echo "End <br>";
+    }
+}
+
+$obj = new class5(20);
+
+$obj -> fun7();
+
+*/
+
+
+
+
+class class5{
+
+    function __construct($y){
+         $this->x = $y;
+    }
+
+    function fun7(){
+        echo $this->x ."<br>";
+    }
+
+    function __destruct(){
+        echo "End <br>";
+    }
+}
+
+$obj = new class5(20);
 
 $obj -> fun7();
 
