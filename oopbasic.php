@@ -34,7 +34,7 @@ $obj -> fun4();
 */
 
 
-
+/*
 
 class class3{
     public $x = 1;
@@ -54,10 +54,52 @@ echo "<br>";
 
 echo $obj2 -> x;
 
+*/
+
+/*
+
+class class4{
+
+    function __construct(){
+        echo "Start"."<br>";
+    }
+
+    function __destruct(){
+        echo "End"."<br>";
+    }
+
+    function fun6(){
+        echo "Hello"."<br>";
+    }
+    
+}
+
+
+$obj = new class4();
+$obj -> fun6();
+
+*/
 
 
 
+class class5{
 
+    function __construct(){
+        echo "Start <br>";
+    }
+
+    function fun7(){
+        echo "Hi <br>";
+    }
+
+    function __destruct(){
+        echo "End <br>";
+    }
+}
+
+$obj = new class5();
+
+$obj -> fun7();
 
 
 ?>
