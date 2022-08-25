@@ -21,6 +21,8 @@
 */
 
 
+/*
+
     class product{
         public $name ;
         public $price;
@@ -45,6 +47,10 @@
     echo "<br>";
     echo $pc->get_price();
     
+*/
+
+
+
 
 
 
