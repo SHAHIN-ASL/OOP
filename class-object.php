@@ -1,28 +1,79 @@
 <?php
 
 
-class laptop {
+
+/*
+
+    class phone {
+
+        public $name;
+        public $color;
+
+        function set_name($name){
+            $this->name = $name;
+        }
+        
+        function get_name(){
+            return $this->name;
+        }
+        
+    }
+
+    $samsung = new phone();
+    $oppo = new phone();
+
+    $samsung->set_name("Samsung J7");
+    $oppo->set_name("OPPO");
+
+    echo $samsung->get_name();
+    echo "<br>";
+    echo $oppo->get_name();
+
+
+*/
+
+
+/*
+    class player{
+
+        public $name;
+        public $age;
+
+        function set_name($name){
+            $this->name = $name;
+        }
+        function get_name(){
+            return $this->name;
+        }
+
+        function set_age($age){
+            $this->age = $age;
+        }
+        function get_age(){
+            return $this->age;
+        }
+    }
+
     
-    public $name;
-    public $color;
+    
+    $batsman = new player();
+    $age = new player();
 
-    function set_name($name){
-        $this->name = $name;
-    }
+    $batsman->set_name("Shakib Al Hassan");
+    $age->set_age(33);
 
-    function get_name(){
-        return $this->name;
-    }
-}
+    echo $batsman->get_name;
+    echo "<br>";
+    echo $age->get_age;
 
-$obj = new laptop();
-$obj2 = new laptop();
- 
-$obj->set_name("HP Laptop");
-$obj2->set_name("DELL Laptop");
 
-echo $obj->get_name();
-echo "<br>";
-echo $obj2->get_name();
+*/
+
+
+
+
+
+
+
 
 ?>
