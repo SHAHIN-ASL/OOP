@@ -1,5 +1,7 @@
 <?php
 
+/*
+
 class player{
     public $name;
     public $age;
@@ -48,6 +50,66 @@ $e2 = new manager ("Sujon", 50 , 300000);
 
 $e1->info();
 $e2->info();
+
+*/
+
+
+/*
+
+class car {
+    public $name;
+    public $color;
+
+    function __construct($name,$color){
+        $this->name = $name;
+        $this->color = $color;
+    }
+    function intro(){
+        echo "This car is {$this->name} and this color is {$this->color}"."<br>";
+    }
+}
+
+class bus extends car{
+    function msg(){
+        echo "Is it car or bus?";
+    }
+}
+
+$object = new bus("Tesla","Red");
+
+$object->intro();
+$object->msg();
+
+*/
+
+
+
+class car {
+    public $x;
+    public $y;
+
+    public function __construct($a,$b){
+        $this->x = $a;
+        $this->y = $b;
+    }
+    protected function intro(){
+        echo "This car is {$this->x} and This color is {$this->y}.<br>";
+    }
+}
+
+class honda extends car{
+    public function msg(){
+        echo "Is it Honda or Car";
+    }
+}
+
+$object = new honda("Tata","Yellow");
+
+$object->intro();
+$object->msg();
+
+
+
 
 
 
