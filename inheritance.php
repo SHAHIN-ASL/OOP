@@ -82,7 +82,7 @@ $object->msg();
 
 */
 
-
+/*
 
 class car {
     public $x;
@@ -108,11 +108,98 @@ $object = new honda("Tata","Yellow");
 $object->intro();
 $object->msg();
 
+*/
+
+
+
+/*
+ class honda {
+    public $name;
+    public $color;
+
+    function __construct($x,$y){
+        $this->name = $x;
+        $this->color = $y;
+    }
+
+    function intro(){
+        echo "This honda is {$this->name} and This color is {$this->color}";
+    }
+}
+
+class car extends honda{
+    public $name;
+    public $color;
+    public $model;
+
+    function __construct($x,$y,$z){
+        $this->name = $x;
+        $this->color = $y;
+        $this->model = $z;
+    }
+    final function intro(){
+        echo "This car is {$this->name} and This color is {$this->color} and This Model is {$this->model}<br>";
+    }
+}
+
+
+$object = new car("Tesla","Silver",2022);
+
+$object->intro();
+
+
+*/
 
 
 
 
+# Used Final Keyword
 
+class honda {
+    public $name;
+    public $color;
+
+    function __construct($x,$y){
+        $this->name = $x;
+        $this->color = $y;
+    }
+
+    Final function intro(){
+        echo "This honda is {$this->name} and This color is {$this->color}";
+    }
+}
+
+class car extends honda{
+    public $name;
+    public $color;
+    public $model;
+
+    function __construct($x,$y,$z){
+        $this->name = $x;
+        $this->color = $y;
+        $this->model = $z;
+    }
+    final function intro(){
+        echo "This car is {$this->name} and This color is {$this->color} and This Model is {$this->model}<br>";
+    }
+}
+
+
+$object = new car("Tesla","Silver",2022);
+
+$object->intro();
 
 
 ?>
+
+
+
+
+
+
+
+
+
+
+
+
